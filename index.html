@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixate Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              coral: "#ee7760",
+              "case-black": "#000000",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="bg-[#ed7b49] flex justify-between items-center px-[5%] py-8">
+      <div class="text-2xl font-bold">fixate.</div>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#work" class="hover:opacity-75">Work</a>
+        <a href="#services" class="hover:opacity-75">Services</a>
+        <a href="#insights" class="hover:opacity-75">Insights</a>
+        <a href="#about" class="hover:opacity-75">About</a>
+        <a
+          href="#contact"
+          class="bg-black text-white px-6 py-2 rounded-full hover:bg-opacity-90"
+        >
+          Contact
+        </a>
+      </div>
+
+      <button class="md:hidden">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="bg-[#ed7b49] px-[5%] py-16 md:py-24">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-12 md:mb-0">
+          <h1
+            class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-6"
+          >
+            Delightful digital products by expert UI & UX designers
+          </h1>
+          <p class="text-xl mb-8 max-w-xl">
+            Making customers happy and businesses healthy with world-class app
+            and website design
+          </p>
+          <a
+            href="#work"
+            class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-opacity-90 transition-all"
+          >
+            Our work
+          </a>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center">
+          <div class="w-full max-w-md">
+            <!-- Replace with your actual illustration -->
+            <img src="assets/img1.png" alt="A" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="bg-case-black text-white py-20 px-[5%]">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto text-center"
+      >
+        <!-- Smart Products -->
+        <div class="flex flex-col items-center">
+          <div class="mb-4">
+            <img src="assets/img2.png" alt="Smart products icon" />
+          </div>
+          <h3 class="text-xl font-serif mb-4">Smart products</h3>
+          <p class="text-gray-400">
+            We're all about simple apps that solve complex problems in a
+            compelling way
+          </p>
+        </div>
+
+        <!-- Happy Users -->
+        <div class="flex flex-col items-center">
+          <div class="mb-4">
+            <img src="assets/img3.png" alt="Happy users icon" />
+          </div>
+          <h3 class="text-xl font-serif mb-4">Happy users</h3>
+          <p class="text-gray-400">
+            We transform your ideas into digital experiences that your customers
+            love
+          </p>
+        </div>
+
+        <!-- Healthy Businesses -->
+        <div class="flex flex-col items-center">
+          <div class="mb-4">
+            <img src="assets/img4.png" alt="Healthy businesses icon" />
+          </div>
+          <h3 class="text-xl font-serif mb-4">Healthy businesses</h3>
+          <p class="text-gray-400">
+            Our apps and website designs create lasting results for your company
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="bg-case-black text-white py-20 px-[5%]">
+      <!-- Cannon Case Study -->
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32"
+      >
+        <div class="order-2 md:order-1">
+          <img
+            src="assets/img6.jpg"
+            alt="Cannon website preview"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="font-serif text-3xl md:text-4xl mb-4">
+            Cannon, a client-centric asset management firm
+          </h2>
+          <p class="text-gray-400 mb-6">
+            Cannon provides their clients with expert offshore solutions and
+            investment advice. They came to us for a website that describes
+            their services and their client-centric approach.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-coral text-black px-6 py-2 rounded-full hover:bg-opacity-90"
+            >Case study</a
+          >
+        </div>
+      </div>
+
+      <!-- Cashee Case Study -->
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32"
+      >
+        <div>
+          <h2 class="font-serif text-3xl md:text-4xl mb-4">
+            Cashee, a digital banking app for teens
+          </h2>
+          <p class="text-gray-400 mb-6">
+            With the Cashee prepaid VISA card and financial app, teens can
+            spend, save, and earn money with ease. Parents help guide their
+            financial education through flexible controls. Our job was to
+            develop the perfect brand feel, and design their website and app.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-coral text-black px-6 py-2 rounded-full hover:bg-opacity-90"
+            >Case study</a
+          >
+        </div>
+        <div>
+          <img
+            src="assets/img7.jpg"
+            alt="Cashee app preview"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+
+      <!-- Black Umbrellas Case Study -->
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="order-2 md:order-1">
+          <img
+            src="assets/img8.jpg"
+            alt="Black Umbrellas platform preview"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="font-serif text-3xl md:text-4xl mb-4">
+            Black Umbrellas, a virtual incubator for entrepreneurs
+          </h2>
+          <p class="text-gray-400 mb-6">
+            Black Umbrellas is a non-profit organisation that supports
+            entrepreneurs through business incubation and enterprise
+            development. We helped turn their manual processes into an online
+            incubation concept.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-coral text-black px-6 py-2 rounded-full hover:bg-opacity-90"
+            >Case study</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="bg-coral px-[5%] py-20">
+      <h2 class="text-4xl font-serif text-center mb-16">
+        How our UI & UX designers can help you
+      </h2>
+
+      <!-- User Experience -->
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-center"
+      >
+        <div>
+          <h3 class="text-2xl font-serif mb-4">User experience</h3>
+          <p class="text-lg mb-6">
+            To solve the right problems, we ask the right questions. Your target
+            customers are an endless source of information: you just need to
+            know what to ask! That's where we come in. We kick off any new
+            digital product project with a healthy dose of user research.
+            Finding out what your users want is key to keeping them coming back.
+          </p>
+          <p class="text-lg mb-6">
+            Our UI & UX designers follow a process driven by feedback from your
+            users. It looks something like this: we collaborate on your business
+            goals, find out more about your users, develop a user-proof way to
+            achieve those goals, test it with real users, and refine it. And we
+            do this over and over again in real time, rapid? It's a continuous
+            cycle of improvements based on real user feedback. This is our
+            secret to creating apps and website designs that delight your users,
+            and turn them into loyal customers!
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-black text-white px-6 py-2 rounded-full hover:bg-opacity-90"
+            >Read more</a
+          >
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="assets/img10.png"
+            alt="UX Design illustration"
+            class="w-full max-w-md"
+          />
+        </div>
+      </div>
+
+      <!-- Website Design -->
+      <div class="max-w-6xl mx-auto mb-20">
+        <h3 class="text-2xl font-serif mb-4">Website design</h3>
+        <p class="text-lg mb-6">
+          Your website will be out of your hands. It represents your company all
+          day, every day, throughout the year. Let's make sure that you present
+          your business to the whole people and your city like you want it
+          today!
+        </p>
+        <p class="text-lg mb-6">
+          Our experienced team of UI & UX designers and web developers work with
+          your marketing team to make it to mission to design websites that not
+          only turn visitors into customers, but also create an impression that
+          lasts. We get this right with a website design process that values
+          solid strategy, intuitive user experience, and works class design -
+          it's all about keeping your users coming back for more!
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-black text-white px-6 py-2 rounded-full hover:bg-opacity-90"
+          >Read more</a
+        >
+      </div>
+
+      <!-- App Design -->
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-center"
+      >
+        <div>
+          <h3 class="text-2xl font-serif mb-4">App design</h3>
+          <p class="text-lg mb-6">
+            We're passionate about designing simple apps that solve complex
+            problems. Sounds easy, right? Not really, but it's where our UI & UX
+            designers really shine.
+          </p>
+          <p class="text-lg mb-6">
+            When designing your app, we focus on creating a fantastic user
+            experience for your customers. It takes a careful combination of
+            strategy and design thinking to get this right. This is where we
+            call in the troops! By bringing together a panel of creative
+            thinkers, top-notch developers, and expert UI & UX designers, we are
+            able to create an app that meets your business goals. We follow a
+            tried and tested process that we've refined over years of project,
+            resulting in a team that's tailored to your app's specific
+            requirements.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-black text-white px-6 py-2 rounded-full hover:bg-opacity-90"
+            >Read more</a
+          >
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="assets/img9.png"
+            alt="App Design illustration"
+            class="w-full max-w-md"
+          />
+        </div>
+      </div>
+
+      <!-- Testimonials Slider -->
+      <div class="max-w-6xl mx-auto overflow-hidden py-12">
+        <div class="flex gap-4">
+          <!-- Individual testimonials would be controlled by JavaScript -->
+          <div class="bg-black text-white p-8 rounded-lg min-w-[300px]">
+            <p class="mb-4">
+              "Fixate is one of the best UI & product management companies of
+              the industry. They help a heart of passionate detail-oriented UX
+              Heroes experience that benefits our business plus makes an amazing
+              impact on our clients and our own product and UX that delights
+              users."
+            </p>
+            <p class="font-bold">Xavier Augustyne</p>
+            <p class="text-sm">OpenCart, Global</p>
+          </div>
+          <!-- Add more testimonials here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Branding Section -->
+    <section class="bg-pink-200 px-[5%] py-20">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="flex justify-center">
+          <img
+            src="assets/img11.png"
+            alt="Go Oral Care Phone Mockup"
+            class="w-full max-w-sm"
+          />
+        </div>
+        <div>
+          <h3 class="text-2xl font-serif mb-4">Branding</h3>
+          <p class="text-lg mb-6">
+            A brand isn't just about a logo. It's the total package - the way a
+            brand helps you connect with the right people. When done effectively
+            it works hand in glove with your identity and personality. The
+            brands we design go beyond pure form and function; they communicate
+            with your customers on an emotional level. Plus, a brand that
+            "grows" does wonders for your website design!
+          </p>
+          <p class="text-lg mb-6">
+            We're really hands-on and a bit of perfectionists, and impossible to
+            forget. So if you're starting a brand from zero, or need help taking
+            your existing brand to the next level and get it out of paint, we're
+            the team for you. We've been honing our branding skills since 2013,
+            and would love to put our brand experience to work for you.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-black text-white px-6 py-2 rounded-full hover:bg-opacity-90"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Marketing Section -->
+    <section class="bg-coral px-[5%] py-20">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-20">
+          <h3 class="text-2xl font-serif mb-4">Digital marketing</h3>
+          <p class="text-lg mb-6">
+            You're off to an excellent start - your branding, website design, or
+            app is done and raring to go. Now it's time to get it seen!
+            Introducing digital marketing. Sometimes marketing a digital product
+            can feel like an uphill struggle, but with a well-planned strategy
+            and clear milestones, we'll make sure your website or app reaches
+            the right people, at the right time.
+          </p>
+          <p class="text-lg mb-6">
+            With help from our skilled digital marketing team, you'll be able to
+            build lasting relationships and engagement with your target audience
+            through powerful networks like Google, Facebook, Instagram, and
+            LinkedIn, or aiming to better your website traffic through search
+            engine optimization, and content marketing. With monthly reporting
+            and analytics, you'll know exactly how effective your digital
+            marketing strategy is. Managing your digital marketing alone can be
+            pretty overwhelming, so don't worry, we've got you covered!
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-black text-white px-6 py-2 rounded-full hover:bg-opacity-90"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-black text-white px-[5%] py-20">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-serif mb-4">
+          Work with our expert UI & UX designers
+        </h2>
+        <p class="text-lg mb-8">
+          We'd love to work with you to create something delightful for your
+          customers!<br />Contact us and let's chat about how we can help your
+          business.
+        </p>
+        <a
+          href="#contact"
+          class="inline-block bg-coral text-black px-8 py-4 rounded-full hover:bg-opacity-90 transition-all"
+          >Say hello</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white px-[5%] py-8 border-t border-gray-800">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <div class="text-sm">
+          © 2024 Fixate | <a href="#terms" class="hover:text-coral">Terms</a> |
+          <a href="#privacy" class="hover:text-coral">Privacy</a>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-coral">
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#" class="hover:text-coral">
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
